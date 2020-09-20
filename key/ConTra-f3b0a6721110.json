@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "contra-1110b",
+  "private_key_id": "f3b0a672111009c7d96efda1186d3c94df0485a7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDOIVo+RUksoHUw\nDCvrEoXq57TuzviFcBJCJtiVkg65wCZB0iAFQrWwmrrffwbfEq035+/oOnRD5xNA\nf7eAiA3jLQ88fk0jXzty4DScfnqWW4CxV1XwxeBmzx4YKKlivC/yK+cEG+cFiajj\n/0ymKMsYqWJgjtrkO+amqWuIRq+m4sOHh9x8GH4nsYRvS2gVzsv7jWlrPqzIop8b\nZpAWi9UnmU0/xoi05KRIdC86OlFzvKvD6zEGL8qGCPBF+NpQyPgYgZWQ28MTq3xB\n8rfEeNaTjEOXnCsbOsnVtPd1OFJ/ZS1oJAAtvOjmP8SrG77flKvw8m9O+U1QqLn7\nEK0e3GM7AgMBAAECggEAD38kaLAOy0MY7E7N8nNHDBz1VkrLFkURqlV/TOdZIg/X\nEHW6oIqeXDOVvv2ux5CA40YVnDDg0sYJhXzUj94qpRybG6InLHSZZI6EhgtgLfOd\nHjgBpwNJVpFVot1Ttq+NLzirunxahukNgG6OFaPVePorAjVbMXNraLYt9mXSCMq6\n9cN5fEgda+E51B7trteKF0t58oAqMZ4bhxpBkj/qYJOCj9YOTZ93KoFGAYC0DNWn\ndQge/Pv14mHCRZuqYekRUYdWfmy908x0SBuVF4KqfS7YVQbuO2sztDylYtc6rD0j\n89ntIlsjIoroYQqVZnKaWK8ifxhS/wNDwjcidrzRCQKBgQDuozvOzdOY+XF6iMo6\nhbt3M511Hzu7p9yBVA9NxIwELzR2CGma3qAeFJmlU+Sj9T4C2bspJJnCMq0p9W43\nT0t7VPAtYgEcRdt5UihR3/098oLrVuwZtsLYW8s+Y7GWtYsKCDespSXe2FLiLMRu\nLUB4ItcPy4VtksVsrB5FrmOmBQKBgQDdIKaAGzHyHl6AZmMn9pQJPefjXA+VbrI1\naK77bCk/Jh+SnOjzQeLNE1tRRsjx8pXsD8aNxeURgScN/5fi/Sd75tBT4SntYzsY\nDfxR4jWOWV5FMMZYPu6O8J7EKY0ZB6P8xRfDso71zqM2JkXwJ+k69eHYdg5/fzZX\n/KZnwfroPwKBgAq/v4npK4bQdZQXZUSNkYwk/wqvhXlGbmBE8QuHtubZWXuXlWos\nbPnt453W0Y2xFkH6nLuVsndU4QfqzjQflj7P7KGesH4dh21HjhliBX4s1kjTeX8P\nBGfKerUsuGsZclHZXOih57rJ87HMYmy0DRtcNmO3vyLYYZwrhJGO8V4hAoGBAI3x\nyI+RZXVLY1Q+5UWg9hQcpf7/eI1u+nxoT3LbUnrT6Q5/JNYKJCGKXGMG8jTFiNF4\nqvcU4l9jLYPB32j5ImBZoL9HWVemDCf7yk1xzPksiuQVVC0PcKlW8kNvfMBldDHs\n/r1DoJtPYtt+pARuSjvr3GbMGbBkI6lFaDhQf9SXAoGBALcYAw6+wLQw9hUo+S/8\n+3ZEguKawIKeKX8MXo9BQ1E29BorvWfKKKDvizMrq5IO4SSaeromVqPm1dOAOu0z\nE+rjZK6Ya9/7PF79yPOJO5xM6JVqjehMUHU0dVFQy5m4m7PkVz+SP5vURkXC0AZj\nRXMPFxVw76x2XDfet+e6mlSd\n-----END PRIVATE KEY-----\n",
+  "client_email": "contra-owner@contra-1110b.iam.gserviceaccount.com",
+  "client_id": "107280957146554209330",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/contra-owner%40contra-1110b.iam.gserviceaccount.com"
+}

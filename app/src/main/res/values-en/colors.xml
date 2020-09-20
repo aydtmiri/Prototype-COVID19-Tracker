@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#5CB4A5</color>
+    <color name="colorAccent">#FFEDB2</color>
+    <color name="backgroundGray">#F8F8F8</color>
+    <color name="turkis_light">#E0F1EE</color>
+    <color name="background">#6B81DE</color>
+    <color name="yellow">#FAC07B</color>
+    <color name="yellowActivites">#FFEDB2</color>
+    <color name="textYellowActivites">#EFB600</color>
+    <color name="yellow_dark_gradient">#FFA584</color>
+    <color name="white">#FFFFFF</color>
+    <color name="inputFieldGray">#B5B5B5</color>
+    <color name="textColor_dark">#707070</color>
+    <color name="textColor_dark_light">#919191</color>
+
+    <!-- Notifications -->
+    <color name="notifiaction_bg_red">#FFC4C4</color>
+    <color name="notifiaction_textcolor_red">#FF7B7B</color>
+    <color name="notifiaction_bg_gray">#ECECEC</color>
+    <color name="notifiaction_textcolor_gray">#A7A7A7</color>
+
+</resources>

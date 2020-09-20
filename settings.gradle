@@ -1,0 +1,2 @@
+rootProject.name='ConTra'
+include ':app'

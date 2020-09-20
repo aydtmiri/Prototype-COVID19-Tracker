@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:animateLayoutChanges="true"
+    tools:context=".View.SpecialistAddCoronaCaseActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id= "@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ui_acs_header"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_contra_header" />
+
+        <TextView
+            android:id="@+id/ui_acs_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="@string/fallMelden"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ui_acs_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.537" />
+
+        <EditText
+            android:id="@+id/input_acs_patient_id"
+            android:layout_width="368dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/inputFieldGray"
+            android:ems="18"
+            android:fontFamily="@font/regular"
+            android:hint="@string/patientID"
+            android:inputType="textPersonName"
+            android:textColor="@color/textColor_dark"
+            android:textColorHint="@color/inputFieldGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.592"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ui_acs_header" />
+
+        <EditText
+            android:id="@+id/input_acs_street"
+            android:layout_width="368dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/inputFieldGray"
+            android:ems="18"
+            android:fontFamily="@font/regular"
+            android:hint="@string/register_street"
+            android:inputType="textPersonName"
+            android:textColor="@color/textColor_dark"
+            android:textColorHint="@color/inputFieldGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.627"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ui_acs_placeResidence" />
+
+        <EditText
+            android:id="@+id/input_acs_plz"
+            android:layout_width="104dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/inputFieldGray"
+            android:ems="18"
+            android:fontFamily="@font/regular"
+            android:hint="@string/register_plz"
+            android:inputType="numberDecimal"
+            android:textColor="@color/textColor_dark"
+            android:textColorHint="@color/inputFieldGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_acs_street" />
+
+        <EditText
+            android:id="@+id/input_acs_city"
+            android:layout_width="256dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/inputFieldGray"
+            android:ems="18"
+            android:fontFamily="@font/regular"
+            android:hint="@string/city"
+            android:inputType="textPersonName"
+            android:textColor="@color/textColor_dark"
+            android:textColorHint="@color/inputFieldGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toEndOf="@+id/input_acs_plz"
+            app:layout_constraintTop_toBottomOf="@+id/input_acs_street" />
+
+        <EditText
+            android:id="@+id/input_acs_date"
+            android:layout_width="130dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/inputFieldGray"
+            android:ems="18"
+            android:fontFamily="@font/regular"
+            android:hint="@string/caseDate"
+            android:inputType="date"
+            android:textColor="@color/textColor_dark"
+            android:textColorHint="@color/inputFieldGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_acs_country" />
+
+        <Spinner
+            android:id="@+id/input_acs_country"
+            android:layout_width="368dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:dropDownSelector="@android:drawable/arrow_down_float"
+            android:entries="@array/Länder"
+            android:prompt="@string/country_prompt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.627"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_acs_city" />
+
+        <TextView
+            android:id="@+id/ui_acs_placeResidence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/placeOfResidence"
+            android:textColor="@color/textColor_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_acs_patient_id" />
+
+        <Spinner
+            android:id="@+id/input_acs_corona_status"
+            android:layout_width="368dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:dropDownSelector="@android:drawable/btn_star_big_on"
+            android:entries="@array/Status"
+            android:popupBackground="@android:drawable/presence_busy"
+            android:prompt="@string/country_prompt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.627"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_acs_date" />
+
+        <Spinner
+            android:id="@+id/input_acs_radius"
+            android:layout_width="185dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:dropDownSelector="@android:drawable/arrow_down_float"
+            android:entries="@array/Radius"
+            android:prompt="@string/country_prompt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.694"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ui_acs_notifyallpersons_1" />
+
+        <TextView
+            android:id="@+id/ui_acs_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/notification"
+            android:textColor="@color/textColor_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_acs_corona_status" />
+
+        <TextView
+            android:id="@+id/ui_acs_notifyallpersons_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/allPersonsInRadius"
+            android:textColor="@color/textColor_dark"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ui_acs_notification" />
+
+        <TextView
+            android:id="@+id/ui_acs_notify_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/notifyPerson"
+            android:textColor="@color/textColor_dark"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_acs_radius" />
+
+        <TextView
+            android:id="@+id/ui_acs_lastActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/lastActivities"
+            android:textColor="@color/textColor_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ui_acs_notify_2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ui_acs_activitiesView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ui_acs_lastActivities" />
+
+        <TextView
+            android:id="@+id/ui_acs_hide_activites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/light"
+            android:onClick="hideShowActivity"
+            android:text="@string/hideAktivity"
+            android:textColor="@color/textColor_dark_light"
+            app:layout_constraintBottom_toTopOf="@+id/ui_acs_activitiesView"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:onClick="addActivity"
+            app:backgroundTint="@color/textYellowActivites"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ui_acs_activitiesView"
+            app:srcCompat="@drawable/ic_buttonplussymbol" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ui_button_lila"
+            android:text="@string/sendCase"
+            android:onClick="addCoronaCase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
+
+        <TextView
+            android:id="@+id/placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginStart="237dp"
+            android:layout_marginLeft="237dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="115dp"
+            android:layout_marginRight="115dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/ui_acs_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/regular"
+            android:text="km"
+            android:textColor="@color/textColor_dark"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintStart_toEndOf="@+id/input_acs_radius"
+            app:layout_constraintTop_toBottomOf="@+id/ui_acs_notifyallpersons_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

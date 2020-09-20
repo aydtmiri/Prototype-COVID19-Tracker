@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ui_a_editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/regular"
+        android:hint="@string/hintActivityTitle"
+        android:inputType="text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ui_a_editDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/regular"
+        android:hint="@string/hintActivityDate"
+        android:inputType="date"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/ui_a_editTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/regular"
+        android:hint="@string/hintActivityTime"
+        android:inputType="time"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/ui_a_editLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/regular"
+        android:hint="@string/hintActivityLocation"
+        android:inputType="text"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/ui_a_editDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/regular"
+        android:hint="@string/hintActivityDecription"
+        android:inputType="textLongMessage"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
